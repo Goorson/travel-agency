@@ -1,0 +1,4 @@
+.fade-in-container {
+    background: linear-gradient(180deg,  transparent 0%, black 100%);
+    height: 80px;
+}

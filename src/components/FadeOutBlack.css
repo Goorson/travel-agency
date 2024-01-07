@@ -1,0 +1,5 @@
+.fade-out-container {
+    background: linear-gradient(180deg,  black 0%, transparent 100%);
+    background-color: white;
+    height: 80px;
+}

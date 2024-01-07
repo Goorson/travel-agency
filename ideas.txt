@@ -3,3 +3,5 @@
 3. If user wants to create cutom travel issue, there is another page for that, 
     a form that after submitting will send info to the admin mail, or to excel file
     and save it under user account (you need to be logged to do that)
+4. change colors (niebieski moze?)
+5. https://www.fulidhootours.com/
