@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PackageItem from './PackageItem'
 import './Packages.css'
 
@@ -21,6 +21,8 @@ function Packages() {
                     label='Sightseeing'
                     path='/services'
                     />
+                  </ul>
+                  <ul className='packages-items'>
                     <PackageItem 
                     src='destination3.jpg'
                     text='Experience the natural beauty and adventure activities on Maledives Islands.'

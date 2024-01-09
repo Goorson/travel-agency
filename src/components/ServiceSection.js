@@ -1,6 +1,21 @@
-// ServiceSection.js
 import React from 'react';
 import './ServiceSection.css';
+import { motion } from "framer-motion"
+
+const cardVariants = {
+  offscreen: {
+    y: 300
+  },
+  onscreen: {
+    y: 50,
+    rotate: -10,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.8
+    }
+  }
+};
 
 function ServiceSection() {
   return (
@@ -10,11 +25,15 @@ function ServiceSection() {
       <h2>Our Services</h2>
       <p>Discover what we offer</p>
       <div className="service-row">
-        <div className="service-item">
+        <motion.div 
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8 }}
+        className="service-item slideanim">
           <i className="fas fa-globe fa-3x"></i>
           <h4>Travel Packages</h4>
           <p>List of ready all-inclusive trips for you to choose from</p>
-        </div>
+        </motion.div>
         <div className="service-item">
           <i className="fas fa-pencil-alt fa-3x"></i>
           <h4>Travel Organization</h4>

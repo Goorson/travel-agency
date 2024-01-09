@@ -13,9 +13,6 @@ function MainSection() {
                 <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
                     Start!
                 </Button>
-                <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
-                    OUR INSTAGRAM
-                </Button>
             </div>
         </div>
     );      

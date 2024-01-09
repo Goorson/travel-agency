@@ -1,5 +1,5 @@
 :root {
-    --primaryColor: #68632d;
+    --primary: #3f6e37;
     --secondary: #FBEEC1;
     --additional: #fffaea;
 }
@@ -51,7 +51,7 @@
 }
 
 .btn--medium:hover, .btn--large:hover{
-    background-color: var(--additional);
-    color: var(--primaryColor);
+    background-color: white;
+    color: var(--primary);
     transition: 250ms;
 }
