@@ -1,9 +1,3 @@
-:root {
-    --primary: #3f6e37;
-    --secondary: #FBEEC1;
-    --additional: #fffaea;
-}
-
 .btn { 
     padding: 8px 20px;
     border-radius: 2px;
