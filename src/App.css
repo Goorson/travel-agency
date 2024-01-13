@@ -3,8 +3,8 @@
     margin: 0;
     padding: 0;
     font-family: normal normal normal calc(42 * var(--theme-spx-ratio))/1.4em wfont_da9c68_70d984447a244abea92704e91e35b213,wf_70d984447a244abea92704e91,orig_italiana;
-    font: 400 sans-serif;;
-    --primary: #8D8741;;
+    font: 400 sans-serif;
+    --primary: #8D8741;
     --secondary: #FBEEC1;
     --additional: #fffaea;
   }

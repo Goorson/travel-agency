@@ -1,6 +1,7 @@
 import React from 'react';
 import './RegistrationSection.css';
 import { Link } from 'react-router-dom';
+import { Button } from '../Button';
 
 function RegistrationSection() {
   return (
@@ -16,7 +17,9 @@ function RegistrationSection() {
             Password:
             <input type="password" name="password" />
           </label>
-          <button className='btn--primary' type="submit">Register</button>
+          <Button buttonStyle='btn--outline'>
+            Register
+          </Button>
         </form>
         <Link to="/login" className='login-link'>
           <button className='btn--outlined'>Already have an account? Log in here</button>
