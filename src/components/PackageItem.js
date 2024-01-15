@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from "framer-motion";
+import { Button } from './Button';
 
 function PackageItem(props) {
     const [isOpen, setIsOpen] = useState(false)
@@ -28,10 +29,15 @@ function PackageItem(props) {
                 </motion.div>
                 )}
                 {isOpen && ( 
-                <motion.div>
+                <motion.div className='price'>
                     <motion.p>
                       {props.price}
                     </motion.p>
+                    <motion.div className='button-book'>
+                      <button to='/login' className='button'>
+                      Book
+                      </button>
+                    </motion.div>
                 </motion.div>
                 )}
             </motion.Link>

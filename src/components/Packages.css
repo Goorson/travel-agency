@@ -140,4 +140,38 @@
       margin-bottom: 2rem;
     }
   }
+
+  .price p{
+    text-align: center;
+  }
+  .price{
+    width: 100%;
+  }
+
+  .button-book {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center; /* Add this line to center the content horizontally */
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    width: 90%;
+    max-width: 300px; /* Set a maximum width if needed */
+    align-self: center;
+    background-color: var(--primary);
+    color: white;
+    padding: 8px 20px;
+    font-size: 20px;
+    transition: all 0.2s linear;
+    border-radius: 10px;
+  }
+  
+  .button:hover {
+    border: 1px solid var(--primary);
+    background-color: white;
+    color: var(--primary);
+  }
   

@@ -17,12 +17,12 @@ function RegistrationSection() {
             Password:
             <input type="password" name="password" />
           </label>
-          <Button buttonStyle='btn--outline'>
+          <button className='btn-2'>
             Register
-          </Button>
+          </button>
         </form>
         <Link to="/login" className='login-link'>
-          <button className='btn--outlined'>Already have an account? Log in here</button>
+          <button className='btn-2'>Already have an account? Log in here</button>
         </Link>
         <p className='success-message'>Registration successful! You can now log in.</p>
       </div>

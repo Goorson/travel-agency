@@ -8,10 +8,10 @@ function Footer() {
     <div className='footer-container'>
         <section className='footer-subscription'>
             <p className='footer-subscription-heading'>
-                Join join join join 
+                Out newsletter whit fresh offers
             </p>
             <p className='footer-subscription-text'>
-                Why not join? 
+                Care to join?
             </p>
             <div className='input-areas'>
                 <form>

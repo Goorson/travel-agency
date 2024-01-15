@@ -1,12 +1,13 @@
 import React from 'react'
 import '../../App.css'
-import LoginSection from '../LogInPage/LoginSection'
 import RegistrationSection from '../LogInPage/RegistrationSection'
+import Footer from '../Footer'
 
 export default function SignUp() {
     return (
         <>
             <RegistrationSection />
+            <Footer />
         </>
     )
 }

@@ -40,13 +40,13 @@ function LoginSection() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </label>
-          <Button buttonStyle='btn--outline'>
+          <button className='btn-2'>
             Log In
-          </Button>
+          </button>
         </form>
         {errorMessage && <p className='error-message'>{errorMessage}</p>}
         <Link to="/register" className='register-link'>
-          <button className='btn--outline'>Don't have an account? Register here</button>
+          <button className='btn-2'>Don't have an account? Register here</button>
         </Link>
       </div>
     </div>

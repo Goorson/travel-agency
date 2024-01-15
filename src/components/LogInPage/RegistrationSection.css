@@ -1,45 +1,58 @@
 .registrationSection {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .registration-container {
-    background-color: var(--primary);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    color: #fff;
-    text-align: center;
-  }
-  
-  .registration-form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-  }
-  
-  .success-message {
-    color:  var(--primary);
-    margin-top: 10px;
-  }
-  
-  .login-link {
-    margin-top: 20px;
-    text-decoration: none;
-  }
-  
-  .login-link button {
-    background-color: var(--primary);
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .login-link button:hover {
-    background-color: var(--primary);
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.registration-container {
+  background-color: var(--primary);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 400px; /* Match the max-width with the login section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.success-message {
+  color: var(--primary);
+  margin-top: 10px;
+}
+
+.login-link {
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.btn-2 {
+  background-color: var(--primary);
+  color: #fff;
+  padding: 8px 20px;
+  border: 1px solid white;
+  transition: all 0.3s ease-out;
+  border-radius: 5px;
+  width: 100%; 
+  align-self: center;
+}
+
+.btn-2:hover {
+  background-color: white;
+  color: var(--primary);
+  transition: 250ms;
+  transform: scale(1.05);
+}
