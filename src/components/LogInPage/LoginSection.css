@@ -79,5 +79,12 @@ input {
 
 .error-message {
   color: red;
+  font-style: bold;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: rgb(21, 255, 0);
+  font-style: bold;
   margin-top: 10px;
 }
