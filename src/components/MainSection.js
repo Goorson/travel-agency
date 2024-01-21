@@ -1,7 +1,7 @@
 import React from 'react'
 import '../App.js'
-import { Button } from './Button'
-import './MainSection copy.css'
+import { Button } from './Button.js'
+import './MainSection.css'
 
 function MainSection() {
     return (
