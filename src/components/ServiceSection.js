@@ -2,21 +2,6 @@ import React from 'react';
 import './ServiceSection.css';
 import { motion } from "framer-motion"
 
-const cardVariants = {
-  offscreen: {
-    y: 300
-  },
-  onscreen: {
-    y: 50,
-    rotate: -10,
-    transition: {
-      type: "spring",
-      bounce: 0.4,
-      duration: 0.8
-    }
-  }
-};
-
 function ServiceSection() {
   return (
     <div id="services" className="service-container">

@@ -18,6 +18,7 @@ const PackagePage = (props) => {
       </div>
       <div className="package-details">
         <p className="package-description">{packageItem.text}</p>
+        <p classname="package-description">{packageItem.description}</p>
         <p className="package-price">Price: {packageItem.price}</p>
       </div>
     </div>
