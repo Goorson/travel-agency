@@ -1,8 +1,8 @@
 html{
-  scroll-behavior: smooth;;
+  scroll-behavior: smooth;
 }
 .navbar {
-    background: linear-gradient(90deg,  var(--primary) 0%, var(--primary) 100%);
+    background: var(--primary);
     height: 65px;
     display: flex;
     justify-content: center;
@@ -15,26 +15,38 @@ html{
   
   .navbar-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; 
+    margin-left: 5%;
     align-items: center;
-    height: 80px;
     max-width: 1500px;
+    width: 100%;
   }
   
   .navbar-logo {
     color: #fff;
-    justify-self: start;
-    margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
-    display: flex;
-    align-items: center;
   }
   
-  .fa-typo3 {
-    margin-left: 0.5rem;
-    font-size: 1.8rem;
+  .menu-icon {
+    display: none;
+    cursor: pointer;
+    order: 2;
+    max-height: 65px;
+    position: absolute;
+    top: 45%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+  }
+
+  .menu-icon i {
+    max-height: 19px; 
+    font-size: 1.4rem; 
+  }
+  
+  .menu-icon i::after {
+    max-height: 20px; 
   }
   
   .nav-menu {
@@ -46,6 +58,8 @@ html{
     width: 60vw;
     justify-content: end;
     margin-right: 2rem;
+    margin-top: 0;
+    padding-top: 0; 
   }
   
   .nav-item {
@@ -71,10 +85,6 @@ html{
   }
   
   .nav-links-mobile {
-    display: none;
-  }
-  
-  .menu-icon {
     display: none;
   }
 
@@ -107,13 +117,6 @@ html{
     text-align: center;
     z-index: 1000;
   }  
-  
-  /* ... (your existing CSS styles) */
-
-.menu-icon {
-  display: none;
-  cursor: pointer;
-}
 
 .fa-bars {
   color: #fff;
@@ -124,43 +127,43 @@ html{
 }
 
 @media screen and (max-width: 960px) {
-  .NavbarItems {
-    position: relative;
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .navbar-logo {
+    position: absolute;
+    top: 20%;
+    left: 50%; 
+    transform: translateX(-50%);
   }
 
   .menu-icon {
     display: block;
+  }
+
+  .nav-menu {
+    display: none;
     position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 0%);
-    font-size: 1.8rem;
-    cursor: pointer;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: #242222;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .fa-times {
     color: #fff;
     font-size: 2rem;
-  }
-
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 80px;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
-    z-index: 1;
-  }
-
-  .nav-menu.active {
-    background: #242222;
-    left: 0;
-    opacity: 1;
-    transition: all 0.5s ease;
   }
 
   .nav-links {
@@ -174,13 +177,6 @@ html{
     background-color: #fff;
     color: #242424;
     border-radius: 0;
-  }
-
-  .navbar-logo {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(50%, 40%);
   }
 
   .nav-links-mobile {
@@ -204,3 +200,4 @@ html{
     transition: 250ms;
   }
 }
+

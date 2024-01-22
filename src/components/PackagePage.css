@@ -7,18 +7,21 @@ html, body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 70vh;
-  margin: 0;
+  min-height: 100vh;
 }
 
 .package-image {
+  display: flex;
   position: relative;
-  text-align: center;
   width: 100%;
+  max-height: 60vh;
+  overflow: hidden;
+  align-items: center;
 }
 
 .package-image img {
   width: 100%;
+  max-height: 100%;
   object-fit: cover;
 }
 
@@ -28,25 +31,25 @@ html, body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 100px;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .package-details {
   text-align: left;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
 }
 
 .package-description {
-  margin-top: 20px;
-  font-size: 16px;
+  font-size: 1.2em;
   margin-bottom: 15px;
 }
 
 .package-price {
-  margin-top: 20px;
-  font-size: 30px;
+  font-size: 1.5em;
   font-weight: bold;
   color: var(--primary);
+  margin-bottom: 20px;
 }

@@ -1,6 +1,4 @@
 import React from 'react'
-import '../App.js'
-import { Button } from './Button.js'
 import './MainSection.css'
 
 function MainSection() {
@@ -9,11 +7,6 @@ function MainSection() {
             <video src='main.mp4' autoPlay loop muted />
             <h1>Experience your way</h1>
             <p>Your World, Your Choice, Our Passion!</p>
-            <div className='main-btns'>
-                <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
-                    Start!
-                </Button>
-            </div>
         </div>
     );      
 }

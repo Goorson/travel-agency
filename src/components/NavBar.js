@@ -11,7 +11,6 @@ function NavBar() {
   const closeMobileMenu = () => setClick(false);
   const [button, setButton] = useState(true);
   const { user, logout } = useAuth();
-  const [isLoggedIn, setLoggedIn] = useState(false);
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -31,7 +30,6 @@ function NavBar() {
   }, []);
 
   const handleLogout = () => {
-    setLoggedIn(false);
     logout();
     window.location.reload();
   };

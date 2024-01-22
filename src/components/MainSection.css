@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 video {
     object-fit: cover;
     width: 100%;
@@ -5,41 +9,49 @@ video {
     position: fixed;
     z-index: -1;
 }
-
-.main-container{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    box-shadow: insert 0 0 0 1000px rgba(0,0,0,0.2);
-    object-fit: contain;
+  
+.main-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
 }
 
-
-.main-container > h1 {
-    color: white;
-    font-size: 100px;
-    margin-top: -100px;
-    margin-left: 230px;
+.main-content {
+  text-align: center;
 }
 
-.main-container > p {
-    color: white;
-    font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin-left: 230px;
-    margin-top: 8px;
+.main-container h1 {
+  color: white;
+  font-size: 4em;
+  margin-top: 0;
+}
+
+.main-container p {
+  color: white;
+  font-size: 2em;
+  margin-top: 8px;
 }
 
 .main-btns {
-    margin-left: 230px;
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
 .main-btns .btn {
-    margin: 6px;
-    border-radius: 30px;
+  margin: 6px;
+  border-radius: 30px;
 }
 
+@media screen and (max-width: 768px) {
+  .main-container h1 {
+    font-size: 2.5em;
+  }
+
+  .main-container p {
+    font-size: 1.2em;
+  }
+}
+  
