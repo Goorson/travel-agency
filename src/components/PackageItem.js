@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 
 function PackageItem(props) {
     const [isOpen, setIsOpen] = useState(false)
+
+    const handleShowMoreClick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <>
         <motion.li layout className='packages-item' onClick={() => setIsOpen(!isOpen)}>
@@ -34,9 +38,9 @@ function PackageItem(props) {
                       {props.price}
                     </motion.p>
                     <motion.div className='button-book'>
-                    <Link to={`/package/${props.id}`} className='button'>
-                     Book
-                    </Link>
+                      <Link to={`/package/${props.id}`} className='button' onClick={handleShowMoreClick}>
+                      Show more
+                      </Link>
                     </motion.div>
                 </motion.div>
                 )}

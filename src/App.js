@@ -7,59 +7,7 @@ import SignUp from './components/pages/SignUp';
 import LogIn from './components/pages/LogIn';
 import PackagePage from './components/PackagePage';
 import { AuthProvider } from './AuthContext';
-
-const packages = [
-    {
-      id: '1',
-      src: 'destination1.jpg',
-      text: "Explore the beautiful beaches and vibrant culture of this glamorous City.",
-      description: "Travel plan: Go to party, go buy expensive stuff, see landmarks, go to sleep, repeat",
-      label: 'Luxury',
-      path: '/services',
-      city: 'DUBAI',
-      price: '1000$',
-    },
-    {
-      id: '2',
-      src: 'destination2.jpg',
-      text: 'Discover the historic landmarks and delicious cuisine of historic masterpiece.',
-      description: "Travel plan: Go to party, go buy expensive stuff, see landmarks, go to sleep, repeat",
-      label: 'Sightseeing',
-      path: '/services',
-      city: 'ISTANBUL',
-      price: '500$',
-    },
-    {
-      id: '3',
-      src: 'destination3.jpg',
-      text: 'Experience the natural beauty and adventure activities on multiple Islands.',
-      description: "Travel plan: Go to party, go buy expensive stuff, see landmarks, go to sleep, repeat",
-      label: 'Relax',
-      path: '/services',
-      city: 'MALDIVES',
-      price: '200$',
-    },
-    {
-      id: '4',
-      src: 'destination4.jpg',
-      text: 'Discover the timeless beauty historic architecture and scenic riverfront.',
-      description: "Travel plan: Go to party, go buy expensive stuff, see landmarks, go to sleep, repeat",
-      label: 'Nature',
-      path: '/services',
-      city: 'PORTO',
-      price: '1200$',
-    },
-    {
-      id: '5',
-      src: 'destination5.jpg',
-      text: 'Cobblestone streets, iconic castle, and festivals. Enchanting Scottish adventure.',
-      description: "Travel plan: Go to party, go buy expensive stuff, see landmarks, go to sleep, repeat",
-      label: 'City break',
-      path: '/services',
-      city: 'EDINBURGH',
-      price: '1000$',
-    },
-  ];
+import packages from './PackagesData'
 
 function App() {
   return (

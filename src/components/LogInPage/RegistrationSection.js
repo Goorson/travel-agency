@@ -1,22 +1,30 @@
 import React, { useState } from 'react';
 import './RegistrationSection.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function RegistrationSection() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
   const [color, setColor] = useState('white')
+  const navigate = useNavigate();
 
-  const handleRegistration = (e) => {
+  const handleRegistration = async (e) => {
     e.preventDefault();
-    if (email === ''  && password === '') {
+    if (email === ''  || password === '') {
       setColor('red')
       setMessage('Please enter both email and password.');
       return;
     }
     setColor('white')
     setMessage('Registration successful! You can now log in.');
+    try {
+      setTimeout(() => {
+        navigate('/login');
+      }, 1000);
+    } catch (error) {
+      console.error('Error during login:', error);
+    }
   };
 
   return (

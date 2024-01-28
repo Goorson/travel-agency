@@ -65,7 +65,6 @@ function NavBar() {
               </a>
             </li>
           </ul>
-          {button && !user && <Button buttonStyle='btn--outline' to='/register'>SignUp</Button>}
           {button && !user && <Button buttonStyle='btn--outline' to='/login'>LogIn</Button>}
           <div className='welcome-message' onClick={toggleDropdown}>
             {button && user && <p>Welcome, {user.userName}</p>}
@@ -75,7 +74,6 @@ function NavBar() {
               </div>
             )}
           </div>
-          
         </div>
       </nav>
     </>

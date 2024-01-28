@@ -1,6 +1,5 @@
 import React from 'react';
 import './ServiceSection.css';
-import { motion } from "framer-motion"
 
 function ServiceSection() {
   return (
@@ -10,15 +9,11 @@ function ServiceSection() {
       <h2>Our Services</h2>
       <p>Discover what we offer</p>
       <div className="service-row">
-        <motion.div 
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.8 }}
-        className="service-item slideanim">
+        <div className="service-item">
           <i className="fas fa-globe fa-3x"></i>
           <h4>Travel Packages</h4>
           <p>List of ready all-inclusive trips for you to choose from</p>
-        </motion.div>
+        </div>
         <div className="service-item">
           <i className="fas fa-pencil-alt fa-3x"></i>
           <h4>Travel Organization</h4>
